@@ -42,7 +42,7 @@ namespace WebAPINgCooking.Controllers
             _repo.Add( entity );
         }
         public void Delete( int Id )
-        {
+        { 
             _repo.Delete( Id );
         }
     }
