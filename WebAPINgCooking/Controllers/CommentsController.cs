@@ -21,7 +21,7 @@ namespace WebAPINgCooking.Controllers
             _repo = repo;
         }
         // GET: api/Comments
-        public IQueryable<Comment> Get()
+        public IQueryable<Comment> GetComments()
         {
             return _repo.GetAll();
         }

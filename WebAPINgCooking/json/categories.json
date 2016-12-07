@@ -1,0 +1,46 @@
+[
+	{
+    "id": 1,
+		"name": "Viandes"
+	},
+	{
+		"id": 2,
+		"name": "Poissons"
+	},
+	{
+		"id": 3,
+		"name": "Fruits de mer"
+	},
+	{
+		"id": 4,
+		"name": "Fruits"
+	},
+	{
+		"id": 5,
+		"name": "Légumes"
+	},
+	{
+		"id": 6,
+		"name": "Boissons"
+	},
+	{
+		"id": 7,
+		"name": "Alcools"
+	},
+	{
+		"id": 8,
+		"name": "Céréales"
+	},
+	{
+		"id": 9,
+		"name": "Produits laitiers"
+	},
+	{
+		"id": 10,
+		"name": "Fromages"
+	},
+	{
+		"id": 11,
+		"name": "Autre"
+	}
+]

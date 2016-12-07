@@ -20,19 +20,19 @@ namespace WebAPINgCooking.Controllers
         public IngredientsController( IRepository<Ingredient> repo)
         {
             _repo = repo;
-            /*string path = string.Format("{0}{1}",System.AppDomain.CurrentDomain.BaseDirectory,@"ngCooking-master/json/categories.json");
+            /*string path = string.Format("{0}{1}",System.AppDomain.CurrentDomain.BaseDirectory,@"json/ingredients.json");
             using( StreamReader file = File.OpenText( path ) )
             {
                 JsonSerializer serializer = new JsonSerializer();
                 IList<Ingredient> CI = (IList<Ingredient>)serializer.Deserialize(file, typeof(IList<Ingredient>));
                 foreach( var c in CI )
                 {
-                    PostIngredient( c );
+                    Post( c );
                 }
             }*/
         }
         // GET: api/Ingredients
-        public IQueryable<Ingredient> Get()
+        public IQueryable<Ingredient> GetIngredients()
         {
             return _repo.GetAll();
         }

@@ -66,6 +66,12 @@ namespace WebAPINgCooking.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             kernel.Bind( typeof( IRepository<> ) ).To( typeof( Repository<> ) );
+            //kernel.Bind<IRepository<Recipe>>().To<Repository<Recipe>>();
+            //kernel.Bind<IRepository<Ingredient>>().To<Repository<Ingredient>>();
+            //kernel.Bind<IRepository<CategoryIngredient>>().To<Repository<CategoryIngredient>>();
+            //kernel.Bind<IRepository<User>>().To<Repository<User>>();
+            //kernel.Bind<IRepository<CategoryRecipe>>().To<Repository<CategoryRecipe>>();
+            //kernel.Bind<IRepository<Comment>>().To<Repository<Comment>>();
             kernel.Bind<ngCookingContext>().To<ngCookingContext>();
         }        
     }

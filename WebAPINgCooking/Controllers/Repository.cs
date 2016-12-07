@@ -23,8 +23,11 @@ namespace WebAPINgCooking.Controllers
 
         public void Add( T entity )
         {
-            if (entity != null)
-                _dbSet.Add(entity);
+            if( entity != null )
+            {
+                _dbSet.Add( entity );
+                _db.SaveChanges();
+            }
         }
         public void Delete( int Id )
         {

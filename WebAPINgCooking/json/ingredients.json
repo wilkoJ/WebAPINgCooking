@@ -1,0 +1,330 @@
+[
+	{
+		"useless": "pomme-de-terre",
+		"name": "Pomme de terre",
+		"isAvailable": true,
+		"picture": "pomme-de-terre.jpg",
+		"categoryId": 5,
+		"calories": 140
+	},
+	{
+		"useless": "boeuf",
+		"name": "Boeuf",
+		"isAvailable": true,
+		"picture": "boeuf.jpg",
+		"categoryId": 1,
+		"calories": 200
+	},
+	{
+		"useless": "poulet",
+		"name": "Poulet",
+		"isAvailable": true,
+		"picture": "poulet.jpg",
+		"categoryId": 1,
+		"calories": 180
+	},
+	{
+		"useless": "citron",
+		"name": "Citron",
+		"isAvailable": true,
+		"picture": "citron.jpg",
+		"categoryId": 4,
+		"calories": 110
+	},
+	{
+		"useless": "sucre",
+		"name": "Sucre",
+		"isAvailable": true,
+		"picture": "sucre.jpg",
+		"categoryId": 11,
+		"calories": 600
+	},
+	{
+		"useless": "farine",
+		"name": "Farine",
+		"isAvailable": true,
+		"picture": "farine.jpg",
+		"categoryId": 11,
+		"calories": 310
+	},
+	{
+		"useless": "tomate",
+		"name": "Tomate",
+		"isAvailable": true,
+		"picture": "tomate.jpg",
+		"categoryId": 4,
+		"calories": 80
+	},
+	{
+		"useless": "carotte",
+		"name": "Carotte",
+		"isAvailable": true,
+		"picture": "carotte.jpg",
+		"categoryId": 5,
+		"calories": 65
+	},
+	{
+		"useless": "ananas",
+		"name": "Ananas",
+		"isAvailable": true,
+		"picture": "ananas.jpg",
+		"categoryId": 4,
+		"calories": 95
+	},
+	{
+		"useless": "aubergine",
+		"name": "Aubergine",
+		"isAvailable": true,
+		"picture": "aubergine.jpg",
+		"categoryId": 5,
+		"calories": 50
+	},
+	{
+		"useless": "banane",
+		"name": "Banane",
+		"isAvailable": true,
+		"picture": "banane.jpg",
+		"categoryId": 4,
+		"calories": 210
+	},
+	{
+		"useless": "biere",
+		"name": "Bière",
+		"isAvailable": true,
+		"picture": "biere.jpg",
+		"categoryId": 7,
+		"calories": 140
+	},
+	{
+		"useless": "brocolis",
+		"name": "Brocolis",
+		"isAvailable": true,
+		"picture": "brocolis.jpg",
+		"categoryId": 5,
+		"calories": 80
+	},
+	{
+		"useless": "citron-vert",
+		"name": "Citron vert",
+		"isAvailable": true,
+		"picture": "citron-vert.jpg",
+		"categoryId": 4,
+		"calories": 80
+	},
+	{
+		"useless": "colin",
+		"name": "Colin",
+		"isAvailable": true,
+		"picture": "colin.jpg",
+		"categoryId": 2,
+		"calories": 80
+	},
+	{
+		"useless": "creme",
+		"name": "Crème",
+		"isAvailable": true,
+		"picture": "creme.jpg",
+		"categoryId": 9,
+		"calories": 80
+	},
+	{
+		"useless": "crevettes",
+		"name": "Crevettes",
+		"isAvailable": true,
+		"picture": "crevettes.jpg",
+		"categoryId": 3,
+		"calories": 100
+	},
+	{
+		"useless": "echalotte",
+		"name": "Echalotte",
+		"isAvailable": true,
+		"picture": "echalotte.jpg",
+		"categoryId": 5,
+		"calories": 30
+	},
+	{
+		"useless": "fraise",
+		"name": "Fraise",
+		"isAvailable": true,
+		"picture": "fraise.jpg",
+		"categoryId": 4,
+		"calories": 130
+	},
+	{
+		"useless": "glace",
+		"name": "Glace",
+		"isAvailable": true,
+		"picture": "glace.jpg",
+		"categoryId": 11,
+		"calories": 0
+	},
+	{
+		"useless": "gruyere",
+		"name": "Gruyère",
+		"isAvailable": true,
+		"picture": "gruyere.jpg",
+		"categoryId": 10,
+		"calories": 430
+	},
+	{
+		"useless": "huile-olive",
+		"name": "Huile d'olive",
+		"isAvailable": true,
+		"picture": "huile-olive.jpg",
+		"categoryId": 11,
+		"calories": 850
+	},
+	{
+		"useless": "Huile",
+		"name": "huile-tournesol",
+		"isAvailable": true,
+		"picture": "huile-tournesol.jpg",
+		"categoryId": 11,
+		"calories": 900
+	},
+	{
+		"useless": "jambon",
+		"name": "Jambon",
+		"isAvailable": true,
+		"picture": "jambon.jpg",
+		"categoryId": 1,
+		"calories": 270
+	},
+	{
+		"useless": "kiwi",
+		"name": "Kiwi",
+		"isAvailable": true,
+		"picture": "kiwi.jpg",
+		"categoryId": 4,
+		"calories": 145
+	},
+	{
+		"useless": "lait",
+		"name": "Lait",
+		"isAvailable": true,
+		"picture": "lait.jpg",
+		"categoryId": 9,
+		"calories": 500
+	},
+	{
+		"useless": "mais",
+		"name": "Maïs",
+		"isAvailable": true,
+		"picture": "mais.jpg",
+		"categoryId": 8,
+		"calories": 160
+	},
+	{
+		"useless": "noix-de-coco",
+		"name": "Noix de coco",
+		"isAvailable": true,
+		"picture": "noix-de-coco.jpg",
+		"categoryId": 4,
+		"calories": 100
+	},
+	{
+		"useless": "oeuf",
+		"name": "Oeuf",
+		"isAvailable": true,
+		"picture": "oeuf.jpg",
+		"categoryId": 11,
+		"calories": 450
+	},
+	{
+		"useless": "olives",
+		"name": "Olives",
+		"isAvailable": true,
+		"picture": "olives.jpg",
+		"categoryId": 4,
+		"calories": 490
+	},
+	{
+		"useless": "orange",
+		"name": "Orange",
+		"isAvailable": true,
+		"picture": "orange.jpg",
+		"categoryId": 4,
+		"calories": 105
+	},
+	{
+		"useless": "pamplemousse",
+		"name": "Pamplemousse",
+		"isAvailable": true,
+		"picture": "pamplemousse.jpg",
+		"categoryId": 4,
+		"calories": 100
+	},
+	{
+		"useless": "pasteque",
+		"name": "Pastèque",
+		"isAvailable": true,
+		"picture": "pasteque.jpg",
+		"categoryId": 4,
+		"calories": 40
+	},
+	{
+		"useless": "poire",
+		"name": "Poire",
+		"isAvailable": true,
+		"picture": "poire.jpg",
+		"categoryId": 5,
+		"calories": 65
+	},
+	{
+		"useless": "pomme",
+		"name": "Pomme",
+		"isAvailable": true,
+		"picture": "pomme.jpg",
+		"categoryId": 4,
+		"calories": 55
+	},
+	{
+		"useless": "raisin",
+		"name": "Raisin",
+		"isAvailable": true,
+		"picture": "raisin.jpg",
+		"categoryId": 4,
+		"calories": 90
+	},
+	{
+		"useless": "salade",
+		"name": "Salade",
+		"isAvailable": true,
+		"picture": "salade.jpg",
+		"categoryId": 5,
+		"calories": 25
+	},
+	{
+		"useless": "saumon",
+		"name": "saumon",
+		"isAvailable": true,
+		"picture": "Saumon.jpg",
+		"categoryId": 2,
+		"calories": 250
+	},
+	{
+		"useless": "thon",
+		"name": "Thon",
+		"isAvailable": true,
+		"picture": "thon.jpg",
+		"categoryId": 2,
+		"calories": 180
+	},
+	{
+		"useless": "toast",
+		"name": "Toast",
+		"isAvailable": true,
+		"picture": "toast.jpg",
+		"categoryId": 11,
+		"calories": 160
+	},
+	{
+		"useless": "vin-rouge",
+		"name": "Vin Rouge",
+		"isAvailable": true,
+		"picture": "vin-rouge.jpg",
+		"categoryId": 7,
+		"calories": 70
+	}
+]

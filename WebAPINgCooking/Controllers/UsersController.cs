@@ -33,7 +33,7 @@ namespace WebAPINgCooking.Controllers
             
         }
         // GET: api/Users
-        public IQueryable<User> Get()
+        public IQueryable<User> GetUsers()
         {
             return _repo.GetAll();
         }

@@ -34,7 +34,7 @@ namespace WebAPINgCooking.Controllers
             }*/
         }
         // GET: api/Comments
-        public IQueryable<CategoryRecipe> Get()
+        public IQueryable<CategoryRecipe> GetCategoryRecipes()
         {
             return _repo.GetAll();
         }

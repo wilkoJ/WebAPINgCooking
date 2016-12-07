@@ -29,7 +29,7 @@ namespace WebAPINgCooking
             modelBuilder.Entity<CategoryIngredient>()
                 .HasMany( e => e.Ingredients )
                 .WithRequired( e => e.CategoryIngredient )
-                .HasForeignKey( e => e.cateogryId )
+                .HasForeignKey( e => e.categoryId )
                 .WillCascadeOnDelete( false );
 
             modelBuilder.Entity<CategoryRecipe>()

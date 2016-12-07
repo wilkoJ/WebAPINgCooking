@@ -17,7 +17,7 @@ namespace WebAPINgCooking
 
         public int ingredientId { get; set; }
 
-        public int cateogryId { get; set; }
+        public int categoryId { get; set; }
 
         [Required]
         [StringLength(50)]
