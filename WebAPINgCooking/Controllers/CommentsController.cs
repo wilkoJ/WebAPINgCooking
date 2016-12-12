@@ -21,13 +21,17 @@ namespace WebAPINgCooking.Controllers
             _repo = repo;
         }
         // GET: api/Comments
-        public IQueryable<Comment> GetComments()
+        public IQueryable<Comment> Get()
         {
             return _repo.GetAll();
         }
-        public void Post( Comment entity )
+        public HttpResponseMessage Post( Comment entity )
         {
             _repo.Add( entity );
+            return Request.CreateResponse( HttpStatusCode.OK, new
+            {
+                entity = entity
+            } );
         }
         public void Delete( int Id )
         {

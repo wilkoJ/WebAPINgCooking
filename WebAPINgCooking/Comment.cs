@@ -25,7 +25,7 @@ namespace WebAPINgCooking
 
         [Key]
         [Column("comment", Order = 3)]
-        public string comment1 { get; set; }
+        public string comment { get; set; }
 
         [Key]
         [Column(Order = 4)]

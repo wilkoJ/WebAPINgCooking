@@ -112,10 +112,6 @@ namespace WebAPINgCooking
             modelBuilder.Entity<Comment>()
                 .Property( e => e.title )
                 .IsUnicode( false );
-
-            modelBuilder.Entity<Comment>()
-                .Property( e => e.comment1 )
-                .IsUnicode( false );
         }
     }
 }

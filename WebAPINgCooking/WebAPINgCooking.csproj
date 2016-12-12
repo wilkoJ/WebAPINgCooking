@@ -261,6 +261,7 @@
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Recipe.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
+    <Compile Include="Scripts\PreflightHandler.cs" />
     <Compile Include="Scripts\UserSerialize.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="sysdiagram.cs" />
