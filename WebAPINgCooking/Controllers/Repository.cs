@@ -21,13 +21,24 @@ namespace WebAPINgCooking.Controllers
             return _dbSet;
         }
 
-        public void Add( T entity )
+        public T Get(int id)
         {
-            if( entity != null )
+            return _dbSet.Find( id );
+        }
+        public bool Add( T entity )
+        {
+            bool res;
+            try
             {
                 _dbSet.Add( entity );
                 _db.SaveChanges();
+                res = true;
             }
+            catch
+            {
+                res = false;
+            }
+            return res;
         }
         public void Delete( int Id )
         {

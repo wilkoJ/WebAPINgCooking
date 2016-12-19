@@ -5,7 +5,8 @@ namespace WebAPINgCooking.Controllers
     public interface IRepository<T>
     {
         IQueryable<T> GetAll();
-        void Add( T entity );
+        T Get( int id );
+        bool Add( T entity );
         void Delete( int Id );
     }
 }

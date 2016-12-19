@@ -33,13 +33,26 @@ namespace WebAPINgCooking.Controllers
             }*/
         }
         // GET: api/CategoryIngredients
-        public IQueryable<CategoryIngredient> GetCategoryIngredients()
+        public HttpResponseMessage Get()
         {
-            return _repo.GetAll();
+            IQueryable<CategoryIngredient> res = _repo.GetAll();
+            if( res == null )
+                return Request.CreateResponse( HttpStatusCode.NotFound );
+            return Request.CreateResponse( res );
         }
-        public void Post( CategoryIngredient entity)
+        public HttpResponseMessage Get( int id )
         {
-            _repo.Add( entity );
+            CategoryIngredient res = _repo.Get(id);
+            if( res == null )
+                return Request.CreateResponse( HttpStatusCode.NotFound );
+            return Request.CreateResponse( res );
+        }
+        public HttpResponseMessage Post( CategoryIngredient entity )
+        {
+            var res = _repo.Add( entity );
+            if( !res )
+                return Request.CreateResponse( HttpStatusCode.NotFound );
+            return Request.CreateResponse( HttpStatusCode.Created, entity );
         }
         public void Delete( int Id )
         {

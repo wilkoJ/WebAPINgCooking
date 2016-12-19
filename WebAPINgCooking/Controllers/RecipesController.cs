@@ -32,13 +32,26 @@ namespace WebAPINgCooking.Controllers
             }*/
         }
         // GET: api/Recipes
-        public IQueryable<Recipe> GetRecipes()
+        public HttpResponseMessage Get()
         {
-            return _repo.GetAll();
+            IQueryable<Recipe> res = _repo.GetAll();
+            if( res == null )
+                return Request.CreateResponse( HttpStatusCode.NotFound );
+            return Request.CreateResponse( res );
         }
-        public void Post( Recipe entity )
+        public HttpResponseMessage Get( int id )
         {
-            _repo.Add( entity );
+            Recipe res = _repo.Get(id);
+            if( res == null )
+                return Request.CreateResponse( HttpStatusCode.NotFound );
+            return Request.CreateResponse( res );
+        }
+        public HttpResponseMessage Post( Recipe entity )
+        {
+            var res = _repo.Add( entity );
+            if( !res )
+                return Request.CreateResponse( HttpStatusCode.NotFound );
+            return Request.CreateResponse( HttpStatusCode.Created, entity );
         }
         public void Delete( int Id )
         {

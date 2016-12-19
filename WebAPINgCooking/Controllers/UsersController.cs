@@ -33,14 +33,28 @@ namespace WebAPINgCooking.Controllers
             
         }
         // GET: api/Users
-        public IQueryable<User> GetUsers()
+        public HttpResponseMessage Get()
         {
-            return _repo.GetAll();
+            IQueryable<User> res = _repo.GetAll();
+            if( res == null )
+                return Request.CreateResponse( HttpStatusCode.NotFound );
+            return Request.CreateResponse( res );
         }
-        public void Post( User entity )
+        public HttpResponseMessage Get( int id )
         {
-            _repo.Add( entity );
+            User res = _repo.Get(id);
+            if( res == null )
+                return Request.CreateResponse( HttpStatusCode.NotFound );
+            return Request.CreateResponse( res );
         }
+        public HttpResponseMessage Post( User entity )
+        {
+            var res = _repo.Add( entity );
+            if( !res )
+                return Request.CreateResponse( HttpStatusCode.NotFound );
+            return Request.CreateResponse( HttpStatusCode.Created, entity );
+        }
+
         public void Delete( int Id )
         { 
             _repo.Delete( Id );

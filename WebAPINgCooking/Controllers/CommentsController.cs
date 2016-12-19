@@ -21,17 +21,26 @@ namespace WebAPINgCooking.Controllers
             _repo = repo;
         }
         // GET: api/Comments
-        public IQueryable<Comment> Get()
+        public HttpResponseMessage Get()
         {
-            return _repo.GetAll();
+            IQueryable<Comment> res = _repo.GetAll();
+            if( res == null )
+                return Request.CreateResponse( HttpStatusCode.NotFound );
+            return Request.CreateResponse( res );
+        }
+        public HttpResponseMessage Get(int id)
+        {
+            Comment res = _repo.Get(id);
+            if( res == null )
+                return Request.CreateResponse( HttpStatusCode.NotFound );
+            return Request.CreateResponse( res );
         }
         public HttpResponseMessage Post( Comment entity )
         {
-            _repo.Add( entity );
-            return Request.CreateResponse( HttpStatusCode.OK, new
-            {
-                entity = entity
-            } );
+            var res = _repo.Add( entity );
+            if ( !res )
+                return Request.CreateResponse( HttpStatusCode.NotFound );
+            return Request.CreateResponse( HttpStatusCode.Created, entity );
         }
         public void Delete( int Id )
         {
