@@ -28,13 +28,13 @@ namespace WebAPINgCooking.Controllers
                 return Request.CreateResponse( HttpStatusCode.NotFound );
             return Request.CreateResponse( res );
         }
-        public HttpResponseMessage Get(int id)
+        /*public HttpResponseMessage Get(int id)
         {
             Comment res = _repo.Get(id);
             if( res == null )
                 return Request.CreateResponse( HttpStatusCode.NotFound );
             return Request.CreateResponse( res );
-        }
+        }*/
         public HttpResponseMessage Post( Comment entity )
         {
             var res = _repo.Add( entity );
