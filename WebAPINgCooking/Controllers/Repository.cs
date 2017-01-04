@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Web;
 
 namespace WebAPINgCooking.Controllers
 {
@@ -33,18 +31,32 @@ namespace WebAPINgCooking.Controllers
                 _dbSet.Add( entity );
                 _db.SaveChanges();
                 res = true;
+
             }
-            catch
+            catch (Exception e)
             {
+                Console.WriteLine(e.Message);
                 res = false;
             }
             return res;
         }
-        public void Delete( int Id )
+        public bool Delete( int Id )
         {
-            T entity;
-            if ((entity = _dbSet.Find( Id )) != null)
-                _dbSet.Remove( entity );
+            bool res;
+            try
+            {
+                T entity;
+                if ((entity = _dbSet.Find(Id)) != null)
+                    _dbSet.Remove(entity);
+                _db.SaveChanges();
+                res = true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                res = false;
+            }
+            return res;
         }
     }
 }

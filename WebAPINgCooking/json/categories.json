@@ -1,46 +1,46 @@
 [
 	{
-    "id": 1,
+    "categoryId": 1,
 		"name": "Viandes"
 	},
 	{
-		"id": 2,
+		"categoryId": 2,
 		"name": "Poissons"
 	},
 	{
-		"id": 3,
+		"categoryId": 3,
 		"name": "Fruits de mer"
 	},
 	{
-		"id": 4,
+		"categoryId": 4,
 		"name": "Fruits"
 	},
 	{
-		"id": 5,
+		"categoryId": 5,
 		"name": "Légumes"
 	},
 	{
-		"id": 6,
+		"categoryId": 6,
 		"name": "Boissons"
 	},
 	{
-		"id": 7,
+		"categoryId": 7,
 		"name": "Alcools"
 	},
 	{
-		"id": 8,
+		"categoryId": 8,
 		"name": "Céréales"
 	},
 	{
-		"id": 9,
+		"categoryId": 9,
 		"name": "Produits laitiers"
 	},
 	{
-		"id": 10,
+		"categoryId": 10,
 		"name": "Fromages"
 	},
 	{
-		"id": 11,
+		"categoryId": 11,
 		"name": "Autre"
 	}
 ]

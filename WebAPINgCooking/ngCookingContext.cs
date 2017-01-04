@@ -1,14 +1,11 @@
 namespace WebAPINgCooking
 {
-    using System;
     using System.Data.Entity;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using System.Linq;
 
     public partial class ngCookingContext : DbContext
     {
         public ngCookingContext()
-            : base( "name=ngCookingContext" )
+            : base("name=ngCookingDB_Wilko")
         {
         }
 

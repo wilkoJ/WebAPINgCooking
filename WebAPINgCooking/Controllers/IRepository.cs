@@ -7,6 +7,6 @@ namespace WebAPINgCooking.Controllers
         IQueryable<T> GetAll();
         T Get( int id );
         bool Add( T entity );
-        void Delete( int Id );
+        bool Delete( int Id );
     }
 }
