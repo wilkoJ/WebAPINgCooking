@@ -49,7 +49,7 @@ namespace WebAPINgCooking.Controllers
                 if ((entity = _dbSet.Find(Id)) != null)
                     _dbSet.Remove(entity);
                 _db.SaveChanges();
-                res = true; 
+                res = true;
             }
             catch (Exception e)
             {
